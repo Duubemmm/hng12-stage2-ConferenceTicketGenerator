@@ -4,9 +4,9 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        'ticket': "url('/src/assets/Subtract.png')", // Ensure the path is correct
+        'ticket': "url('/Subtract.png')", // Ensure the path is correct
 
-        'barcode': "url('/src/assets/BarCode.png)",
+        'barcode': "url('/BarCode.png)",
 
          'custom-gradient': "radial-gradient( #02191D, #07373F)"
       },

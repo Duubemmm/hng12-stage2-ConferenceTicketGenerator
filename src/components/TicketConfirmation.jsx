@@ -7,7 +7,7 @@ const TicketConfirmation = ({ formData, onBookAnother }) => {
         <h2 className="text-lg font-semibold ">Ready</h2>
         <p className="text-sm text-gray-400">Step 3/3</p>
       </div>
-      <img src="./src/assets/image.png" alt="Ticket" className="w-auto h-1 mb-6" />
+      <img src="/image.png" alt="Ticket" className="w-auto h-1 mb-6" />
       {/* Header */}
       <h2 className="text-2xl font-semibold mb-2">Your Ticket is Booked!</h2>
       <p className="text-gray-400 text-sm mb-6">
@@ -50,7 +50,7 @@ const TicketConfirmation = ({ formData, onBookAnother }) => {
         {/* Barcode */}
         <div className="flex flex-col items-center mt-6">
           <div className="w-30 h-12 bg-transparent mx-auto">
-            <img src="./src/assets/BarCode.png"></img></div> {/* Placeholder for barcode */}
+            <img src="/BarCode.png"></img></div> {/* Placeholder for barcode */}
           <p className="text-gray-400 text-xs mt-2 tracking-widest">1 234567 891026</p>
         </div>
       </div>

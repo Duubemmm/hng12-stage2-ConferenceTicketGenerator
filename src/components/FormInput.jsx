@@ -86,7 +86,7 @@ const FormInput = ({ onBack, onSubmit }) => {
         <h2 className="text-lg font-semibold">Attendee Details</h2>
         <p className="text-sm text-gray-400">Step 2/3</p>
       </div>
-      <img src="/src/assets/image.png" alt="Ticket" className="w-5/6 h-1 mb-6" />
+      <img src="/image.png" alt="Ticket" className="w-5/6 h-1 mb-6" />
       <form onSubmit={handleSubmit}>
         <div className="mb-4">
           <label htmlFor="avatar" className="block text-sm font-medium mb-1">
