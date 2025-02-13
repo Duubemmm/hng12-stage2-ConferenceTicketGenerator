@@ -6,7 +6,7 @@ const Header = () => {
 
         {/* Left Section - Logo & Icon */}
         <div className="flex items-center space-x-2">
-          <img src= "./src/assets/ticzlogo.png" alt="Ticz Logo" className="h-6 w-auto" />
+          <img src= "../src/assets/ticzlogo.png" alt="Ticz Logo" className="h-6 w-auto" />
         </div>
 
         {/* Center Section - Navigation Links (Hidden on small screens) */}
