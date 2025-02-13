@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Global Styles */
+body {
+  @apply bg-gray-900 text-white flex items-center justify-center min-h-screen;
+  background: radial-gradient(
+      52.52% 32.71% at 50% 97.66%,
+      rgba(36, 160, 181, 0.2) 0%,
+      rgba(36, 160, 181, 0) 100%
+    ),
+    #02191d, #0e464f;
+}
+
+#root {
+  @apply flex items-center justify-center w-full min-h-screen;
+}
+
+body {
+    @apply bg-custom-gradient;
+    font-family: 'JejuMyeongjo', sans-serif;
+  }
+
+  @font-face {
+    font-family: 'JejuMyeongjo';
+    src: url('https://db.onlinewebfonts.com/t/1a5c2d8bbd4e28d99a6efcbb9a5b378f.woff2') format('woff2'),
+         url('https://db.onlinewebfonts.com/t/1a5c2d8bbd4e28d99a6efcbb9a5b378f.woff') format('woff'),
+         url('https://db.onlinewebfonts.com/t/1a5c2d8bbd4e28d99a6efcbb9a5b378f.ttf') format('truetype');
+}
+
+
