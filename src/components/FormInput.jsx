@@ -86,7 +86,7 @@ const FormInput = ({ onBack, onSubmit }) => {
         <h2 className="text-lg font-semibold">Attendee Details</h2>
         <p className="text-sm text-gray-400">Step 2/3</p>
       </div>
-      <img src="./src/assets/image.png" alt="Ticket" className="w-5/6 h-1 mb-6" />
+      <img src="/src/assets/image.png" alt="Ticket" className="w-5/6 h-1 mb-6" />
       <form onSubmit={handleSubmit}>
         <div className="mb-4">
           <label htmlFor="avatar" className="block text-sm font-medium mb-1">
@@ -152,7 +152,7 @@ const FormInput = ({ onBack, onSubmit }) => {
             id="email"
             type="email"
             className="w-full p-2 rounded-md text-white bg-transparent border border-ticz"
-            placeholder="hello@ovieoflagos.io"
+            placeholder="hello@avioflagos.io"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             aria-describedby="emailError"
@@ -168,7 +168,7 @@ const FormInput = ({ onBack, onSubmit }) => {
           <label htmlFor="email" className="block text-sm font-medium mb-1">
             About the project
           </label>
-          <textarea placeholder="textarea" className=" p-2 resize-none h-auto text-white bg-transparent border border-ticz rounded md w-full"></textarea>
+          <textarea placeholder="Textarea" className=" p-2 resize-none h-auto text-white bg-transparent border border-ticz rounded md w-full"></textarea>
           </div> 
         <div className="flex flex-col sm:flex-row justify-between mt-6 gap-2">
           <button

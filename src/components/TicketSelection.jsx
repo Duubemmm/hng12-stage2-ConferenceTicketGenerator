@@ -40,7 +40,7 @@ const TicketSelection = ({ selectedTicket, setSelectedTicket, nextStep }) => {
         <h2 className="text-lg font-semibold">Ticket Selection</h2>
         <p className="text-sm text-gray-400">Step 1/3</p>
       </div>
-      <img src="./src/assets/Progress container.png" alt="Ticket" className="w-5/6 h-1 mb-2" />
+      <img src="../src/assets/Progress container.png" alt="Ticket" className="w-5/6 h-1 mb-2" />
 
       {/* Event Info */}
       <div className="bg-custom-gradient border-[#24A0B5] border p-4 rounded-lg mb-4">
