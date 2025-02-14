@@ -21,6 +21,8 @@ function App() {
 
   // Define the onSubmit function
   const handleSubmit = (data) => {
+
+
     // Update the formData state with the submitted data
     setFormData((prevData) => ({
       ...prevData,
@@ -34,9 +36,9 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen w-[100%] flex flex-col items-center justify-center">
+    <div className="min-h-screen min-w-full flex flex-col items-center justify-center">
       <Header />
-      <div className="bg-custom-gradient border-[#24A0B5] border-1 rounded-md shadow-lg max-w-xl w-full mt-12">
+      <div className="bg-custom-gradient border-[#0E464F] border rounded-3xl shadow-lg max-w-2xl w-full mt-16">
         <div className="flex justify-center items-center mb-4">
           {step === 1 && <TicketSelection nextStep={nextStep} />}
           {step === 2 && (

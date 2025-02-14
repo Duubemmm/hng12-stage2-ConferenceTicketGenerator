@@ -81,27 +81,30 @@ const FormInput = ({ onBack, onSubmit }) => {
   };
 
   return (
-    <div className=" w-5/6 mx-auto p-6 border-2 rounded-lg shadow-lg">
-      <div className="flex justify-between items-center border-[#34534a]">
+    <div className=" w-5/6 mx-auto p-6 rounded-lg shadow-lg">
+      <div className="flex justify-between items-center">
         <h2 className="text-lg font-semibold">Attendee Details</h2>
         <p className="text-sm text-gray-400">Step 2/3</p>
       </div>
       <img src="/image.png" alt="Ticket" className="w-5/6 h-1 mb-6" />
+      <div className="border border-[#0E464F] px-2 mt-2 rounded-lg">
       <form onSubmit={handleSubmit}>
-        <div className="mb-4">
-          <label htmlFor="avatar" className="block text-sm font-medium mb-1">
-            Upload Your Profile Picture
+        <div className="mb-4 bg-[#05228] mt-2 h-32 p-2 rounded-md">
+          <label htmlFor="avatar" className="block text-sm font-medium mb-1 mt-1">
+            Upload Profile Picture
           </label>
           <div
-            className="w-full p-6 border-2  border-ticz rounded-md flex flex-col items-center justify-center cursor-pointer"
+            className="w-full h-16 mt-3 bg-[#052228] border-2 relative border-none rounded-md flex flex-col items-center justify-center cursor-pointer"
             onClick={() => document.getElementById("avatar").click()}
           >
-            {/* <img
-              src="./src/assets/uploadavatar.png" 
+            <div className="bg-[#0E464F] border-2 border-[#24A0B5] rounded-lg absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-3 h-20 mt-1">
+            <img
+              src="/icon.png" 
               alt="Upload Icon"
-              className="w-10 h-10 mb-2"
-            /> */}
-            <p className="text-sm text-gray-500">Drag or upload an image</p>
+              className="w-5 h-5 mb-2 mx-auto mt-1"
+            />
+            <p className="text-center text-white text-sm w-40">Drag & drop or click to upload an image</p>
+            </div>
           </div>
           <input
             id="avatar"
@@ -166,7 +169,7 @@ const FormInput = ({ onBack, onSubmit }) => {
         </div>
         <div className="mb-4">
           <label htmlFor="email" className="block text-sm font-medium mb-1">
-            About the project
+            Special request?
           </label>
           <textarea placeholder="Textarea" className=" p-2 resize-none h-auto text-white bg-transparent border border-ticz rounded md w-full"></textarea>
           </div> 
@@ -186,6 +189,7 @@ const FormInput = ({ onBack, onSubmit }) => {
           </button>
         </div>
       </form>
+      </div>
     </div>
   );
 };

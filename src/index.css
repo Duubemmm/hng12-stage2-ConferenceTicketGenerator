@@ -27,6 +27,10 @@ body {
     src: url('https://db.onlinewebfonts.com/t/1a5c2d8bbd4e28d99a6efcbb9a5b378f.woff2') format('woff2'),
          url('https://db.onlinewebfonts.com/t/1a5c2d8bbd4e28d99a6efcbb9a5b378f.woff') format('woff'),
          url('https://db.onlinewebfonts.com/t/1a5c2d8bbd4e28d99a6efcbb9a5b378f.ttf') format('truetype');
+
+         font-family: 'Road Rage';
+         src: url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inconsolata:wght@200..900&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&family=Road+Rage&display=swap');
+
 }
 
 

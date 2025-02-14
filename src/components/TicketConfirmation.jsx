@@ -15,58 +15,76 @@ const TicketConfirmation = ({ formData, onBookAnother }) => {
       </p>
 
       {/* Ticket Container */}
-      <div className="bg-ticket border rounded-lg shadow-lg h-auto w-[90%] relative">
+      <div className="bg-ticket border border-[#0E464F] bg-cover bg-center bg-no-repeat rounded-lg shadow-lg h-auto w-[95%] relative bg-[#052228] mx-auto p-6 max-w-[20rem] min-h-auto overflow-visible">
         {/* Event Title */}
-        <div className="bg-transparent border border-ticz">
+        <div className=" text-center mb-4 bg-transparent border border-[#0E464F] p-2 rounded-lg">
         <h3 className="text-center text-xl font-bold text-white mb-2">Techember Fest &apos;25</h3>
-        <p className="text-center text-white text-sm mb-4">
+        <p className="text-center text-white text-sm">
           📍 Tech Arena, NY <br />
           📅 Dec 15, 2025 | 10:00 AM - 6:00 PM
         </p>
 
         {/* Profile Image */}
         <div className="flex justify-center mb-4">
+        <div className="border border-[#1B2A3B] rounded-lg p-1">
           <img
             src={formData.avatar || "https://via.placeholder.com/100"}
             alt="Attendee"
             className="w-24 h-24 rounded-lg border border-[#1B2A3B]"
           />
-        </div>
-        
-
-        {/* Ticket Details Table */}
-        <div className="border border-ticz bg-teal-950 p-4 rounded-lg text-sm w-5/6 mx-auto">
-          <div className="flex justify-between border-b border-[#1B2A3B] pb-2 mb-2">
-            <p className="text-gray-400">Full Name</p>
-            <p>{formData.fullName || "John Doe"}</p>
-          </div>
-          <div className="flex justify-between border-b border-[#1B2A3B] pb-2 mb-2">
-            <p className="text-gray-400">Email</p>
-            <p>{formData.email || "user@email.com"}</p>
           </div>
         </div>
-        </div>
+        <div className="w-[100%] h-48 border border-ticz rounded-md">
+  {/* First Row: Name & Email */}
+  <div className="flex border-b border-ticz">
+    <div className="flex-1 p-1 border-r border-ticz">
+      <p className="text-sm text-gray-500">Enter your Name</p>
+      <p className="text-sm text-gray-200">{formData.fullName}</p>
+    </div>
+    <div className="flex-1 p-1">
+      <p className="text-sm text-gray-500">Enter your Email*</p>
+      <p className="text-sm text-gray-200">{formData.email}</p>
+    </div>
+  </div>
 
-        {/* Barcode */}
-        <div className="flex flex-col items-center mt-6">
-          <div className="w-30 h-12 bg-transparent mx-auto">
-            <img src="/BarCode.png"></img></div> {/* Placeholder for barcode */}
-          <p className="text-gray-400 text-xs mt-2 tracking-widest">1 234567 891026</p>
-        </div>
-      </div>
+  {/* Second Row: Ticket Type & Ticket Count */}
+  <div className="flex border-b border-ticz">
+    <div className="flex-1 p-1 border-r border-ticz">
+      <p className="text-sm text-gray-500">Ticket Type:</p>
+      <p className="text-sm text-gray-200">{formData.ticketType || "Free"}</p>
+    </div>
+    <div className="flex-1 p-1">
+      <p className="text-sm text-gray-500">Ticket For:</p>
+      <p className="text-sm text-gray-200">{formData.ticketCount || 1}</p>
+    </div>
+  </div>
+
+  {/* Third Row: Special Request (Full Width & 3 Rows) */}
+  <div className="p-3 justify-start align-start">
+    <p className="text-sm text-gray-500 flex ">Special Request?</p>
+    <textarea
+      rows="3"
+      className="w-full border p-2 rounded-md bg-transparent resize-none border-none text-sm text-gray-200"/>
+  </div>
+</div>
+
+    
+  </div>
       {/* Action Buttons */}
+      
+      </div>
       <div className="flex justify-between w-full max-w-lg mt-6">
         <button
-          className="w-1/2 px-1 py-3 text-white border border-[#1B2A3B] rounded-lg hover:bg-[#0E464F]"
+          className="w-1/2 p-1 text-ticz border border-ticz rounded-lg hover:bg-[#0E464F]"
           onClick={onBookAnother}
         >
           Book Another Ticket
         </button>
-        <button className="px-1 py-3 bg-ticz w-60 text-white rounded-md hover:bg-custom-gradient ml-2">
+        <button className="p-1 bg-ticz w-60 text-white rounded-md hover:bg-custom-gradient ml-2">
           Download Ticket
         </button>
       </div>
-    </div>
+      </div>
   );
 };
 
@@ -75,6 +93,9 @@ TicketConfirmation.propTypes = {
     fullName: PropTypes.string,
     email: PropTypes.string,
     avatar: PropTypes.string,
+    ticketType:PropTypes.string,
+    ticketCount:PropTypes.string,
+    specialRequest:PropTypes.string
   }).isRequired,
   onBookAnother: PropTypes.func.isRequired,
 };
