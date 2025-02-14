@@ -57,12 +57,12 @@ const TicketConfirmation = ({ formData, onBookAnother }) => {
       {/* Action Buttons */}
       <div className="flex justify-between w-full max-w-lg mt-6">
         <button
-          className="w-1/2 py-3 text-white border border-[#1B2A3B] rounded-lg hover:bg-[#0E464F]"
+          className="w-1/2 px-1 py-3 text-white border border-[#1B2A3B] rounded-lg hover:bg-[#0E464F]"
           onClick={onBookAnother}
         >
           Book Another Ticket
         </button>
-        <button className="px-4 py-4 bg-ticz w-60 text-white rounded-md hover:bg-custom-gradient ml-2">
+        <button className="px-1 py-3 bg-ticz w-60 text-white rounded-md hover:bg-custom-gradient ml-2">
           Download Ticket
         </button>
       </div>

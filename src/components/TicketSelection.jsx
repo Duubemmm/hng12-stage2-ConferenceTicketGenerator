@@ -37,13 +37,13 @@ const TicketSelection = ({ selectedTicket, setSelectedTicket, nextStep }) => {
     <div className="max-w-md mx-auto bg-custom-gradient text-white p-6 rounded-lg shadow-lg sm:max-w-full sm:px-4">
       {/* Step Indicator */}
       <div className="flex justify-between items-center">
-        <h2 className="text-lg font-semibold">Ticket Selection</h2>
-        <p className="text-sm text-gray-400">Step 1/3</p>
+        <h2 className="text-lg font-semibold text-white">Ticket Selection</h2>
+        <p className="text-sm text-white">Step 1/3</p>
       </div>
       <img src="/image.png" alt="Ticket" className="w-full h-2 mb-2" />
 
       {/* Event Info */}
-      <div className="bg-custom-gradient border-[#24A0B5] border p-4 rounded-lg mb-4">
+      <div className="bg-custom-gradient border-[#24A0B5] border p-4 rounded-xl mb-4">
         <h3 className="text-xl font-semibold italic">Techember Fest &apos;&apos;25</h3>
         <p className="text-sm text-white mt-2">
           Join us for an unforgettable experience at [Event Name]. Secure your spot now.

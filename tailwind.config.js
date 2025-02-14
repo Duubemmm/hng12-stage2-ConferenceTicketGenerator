@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        'ticket': "url('/Subtract.png')", // Ensure the path is correct
+        'ticket': "url('/Subtract.svg')", // Ensure the path is correct
 
         'barcode': "url('/BarCode.png)",
 
